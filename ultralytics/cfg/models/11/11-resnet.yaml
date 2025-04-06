@@ -8,7 +8,7 @@ scales: # there is no scaling for this model; the following scales are used only
 
 backbone:
   # [from, number, module, args]
-  - [-1, 1, Timm, [1024, 'resnet50', False, True, 0, True]]  # ResNet-50 backbone with 1024 output channels
+  - [-1, 1, Timm, [1024, 'resnet50', True, True, 0, True]]  # ResNet-50 backbone with 1024 output channels
   - [0, 1, Index, [512, 2]]  # P3: (80x80, channels=512)
   - [0, 1, Index, [1024, 3]]  # P4: (40x40, channels=1024)
   - [0, 1, Index, [2048, 4]]  # P5: (20x20, channels=2048)
