@@ -8,7 +8,7 @@ scales: # there is no scaling for this model; the following scales are used only
 
 backbone:
   # [from, number, module, args]
-  - [-1, 1, Timm, [2048, 'seresnet50', True, True, 0, True]]  # - 0
+  - [-1, 1, Timm, [2048, 'seresnet50', False, True, 0, True]]  # - 0
   - [0, 1, Index, [512, 2]]   # selects 2nd output (1, 512, 80, 80) - 1
   - [0, 1, Index, [1024, 3]]  # selects 3rd output (1, 1024, 40, 40) - 2
   - [0, 1, Index, [2048, 4]]  # selects 4th output (1, 2048, 20, 20) - 3
