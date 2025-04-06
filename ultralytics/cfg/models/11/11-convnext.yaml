@@ -8,10 +8,10 @@ scales: # there is no scaling for this model; the following scales are used only
 
 backbone:
   # [from, number, module, args]
-  - [-1, 1, Timm, [768, 'convnext_tiny', False, True, 0, True]]  # - 0
-  - [0, 1, Index, [192, 1]]   # selects 1th output (1, 192, 80, 80) - 1
-  - [0, 1, Index, [384, 2]]   # selects 2th output (1, 384, 40, 40) - 2
-  - [0, 1, Index, [768, 3]]   # selects 3th output (1, 768, 20, 20) - 3
+  - [-1, 1, Timm, [2048, 'convnext_tiny', False, True, 0, True]]  # - 0
+  - [0, 1, Index, [512, 1]]   # selects 2nd output (1, 512, 80, 80) - 1
+  - [0, 1, Index, [1024, 2]]  # selects 3rd output (1, 1024, 40, 40) - 2
+  - [0, 1, Index, [2048, 3]]  # selects 4th output (1, 2048, 20, 20) - 3
   - [-1, 1, SPPF, [384, 5]] # SPPF - 4
   - [-1, 2, C2PSA, [384]]   # C2PSA - 5
 
