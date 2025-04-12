@@ -1,12 +1,12 @@
-# .github/
-# tests/
-# examples/
-# docs/
-# CITATION.cff
-# LICENSE
-# mkdocs.yml
-# README.zh-CN.md
-# CONTRIBUTING.md
+.github/
+tests/
+examples/
+docs/
+CITATION.cff
+LICENSE
+mkdocs.yml
+README.zh-CN.md
+CONTRIBUTING.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
