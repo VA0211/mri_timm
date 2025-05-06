@@ -442,6 +442,7 @@ class ConfusionMatrix:
                 xticklabels=ticklabels,
                 yticklabels=ticklabels,
             ).set_facecolor((1, 1, 1))
+        ax.tick_params(axis='both', labelsize=14)
         title = "Confusion Matrix" + " Normalized" * normalize
         ax.set_xlabel("True")
         ax.set_ylabel("Predicted")
